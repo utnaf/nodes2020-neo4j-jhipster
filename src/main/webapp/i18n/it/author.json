@@ -1,0 +1,23 @@
+{
+  "nodes2020App": {
+    "author": {
+      "home": {
+        "title": "Authors",
+        "createLabel": "Genera un nuovo Author",
+        "createOrEditLabel": "Genera o modifica un Author",
+        "notFound": "No Authors found"
+      },
+      "created": "&Egrave; stato generato un nuovo Author con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Author identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Author con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Author {{ id }}?"
+      },
+      "detail": {
+        "title": "Author"
+      },
+      "name": "Name",
+      "wrote": "Wrote"
+    }
+  }
+}

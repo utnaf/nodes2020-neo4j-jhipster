@@ -1,0 +1,25 @@
+{
+  "nodes2020App": {
+    "book": {
+      "home": {
+        "title": "Books",
+        "createLabel": "Genera un nuovo Book",
+        "createOrEditLabel": "Genera o modifica un Book",
+        "notFound": "No Books found"
+      },
+      "created": "&Egrave; stato generato un nuovo Book con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Book identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Book con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Book {{ id }}?"
+      },
+      "detail": {
+        "title": "Book"
+      },
+      "title": "Title",
+      "year": "Year",
+      "type": "Type",
+      "author": "Author"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "nodes2020App": {
+    "type": {
+      "home": {
+        "title": "Types",
+        "createLabel": "Genera un nuovo Type",
+        "createOrEditLabel": "Genera o modifica un Type",
+        "notFound": "No Types found"
+      },
+      "created": "&Egrave; stato generato un nuovo Type con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Type identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Type con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Type"
+      },
+      "name": "Name"
+    }
+  }
+}

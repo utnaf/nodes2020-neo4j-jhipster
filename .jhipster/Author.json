@@ -1,0 +1,29 @@
+{
+  "name": "Author",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "book",
+      "otherEntityRelationshipName": "author",
+      "relationshipName": "wrote"
+    }
+  ],
+  "changelogDate": "20200928154326",
+  "entityTableName": "author",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["nodes2020"]
+}

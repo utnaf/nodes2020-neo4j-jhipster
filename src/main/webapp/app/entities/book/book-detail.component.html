@@ -1,0 +1,46 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="book">
+            <h2><span jhiTranslate="nodes2020App.book.detail.title">Book</span> {{ book.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="nodes2020App.book.title">Title</span></dt>
+                <dd>
+                    <span>{{ book.title }}</span>
+                </dd>
+                <dt><span jhiTranslate="nodes2020App.book.year">Year</span></dt>
+                <dd>
+                    <span>{{ book.year }}</span>
+                </dd>
+                <dt><span jhiTranslate="nodes2020App.book.type">Type</span></dt>
+                <dd>
+                    <div *ngIf="book.type">
+                        <a [routerLink]="['/type', book.type?.id, 'view']">{{ book.type?.name }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="nodes2020App.book.author">Author</span></dt>
+                <dd>
+                    <div *ngIf="book.author">
+                        <a [routerLink]="['/author', book.author?.id, 'view']">{{ book.author?.name }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/book', book.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
