@@ -37,7 +37,10 @@
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],
-    "blueprints": []
+    "blueprints": [],
+    "herokuAppName": "nodes-2020",
+    "herokuDeployType": "jar",
+    "herokuJavaVersion": "11"
   },
   "entities": ["Book", "Type", "Author"]
 }

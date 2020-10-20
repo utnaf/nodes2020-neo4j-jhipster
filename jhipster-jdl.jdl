@@ -1,0 +1,40 @@
+
+application {
+  config {
+    baseName nodes2020,
+    applicationType monolith,
+    packageName com.nodes,
+    authenticationType jwt,
+    prodDatabaseType neo4j,
+    devDatabaseType neo4j,
+    databaseType neo4j,
+    languages [en, it],
+    clientFramework angular,
+    enableHibernateCache false
+  }
+  entities *
+}
+
+entity Book {
+	title String required
+    year Integer min(1200)
+}
+
+entity Type {
+	name String required
+}
+
+entity Author {
+	name String required
+}
+
+relationship OneToOne {
+	Book{type(name)} to Type
+}
+
+relationship OneToMany {
+	Author{wrote} to Book{author(name)}
+}
+    
+paginate * with pagination
+service * with serviceClass
