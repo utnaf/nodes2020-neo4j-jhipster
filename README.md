@@ -1,5 +1,36 @@
 # nodes2020
 
+## Notes from Nodes :)
+
+Hey everyone, thanks for attending the session!
+
+Here you find the generated code, along with the JDL file we create using [JDL Sudio](https://start.jhipster.tech/).
+
+Here's the lisf of commands I ran during the demo
+
+```
+# create jHipster app from JDL file
+jhipster import-jdl [path to jdl file]
+
+# create app
+heroku apps:create nodes-2020 --region eu
+
+# set app ENV vars
+heroku config:set --app=nodes-2020 ORG_NEO4J_DRIVER_AUTHENTICATION_PASSWORD=$NODES_PSW \
+  ORG_NEO4J_DRIVER_AUTHENTICATION_USERNAME=neo4j \
+  ORG_NEO4J_DRIVER_CONFIG_ENCRYPTED=false \
+  ORG_NEO4J_DRIVER_URI=$NODES_URL  > /dev/null 2>&1
+
+# deploy
+jhipster heroku
+```
+
+Neo4j + jHipster happened [here](https://github.com/jhipster/generator-jhipster/pull/11226)
+
+Thank you all! Reach me out anytime for questions!
+
+--
+
 This application was generated using JHipster 6.10.3, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.10.3](https://www.jhipster.tech/documentation-archive/v6.10.3).
 
 ## Development
